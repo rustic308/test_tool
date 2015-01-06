@@ -1,0 +1,11 @@
+[Fio]
+rw = read
+ioengine = psync
+sync = 1
+bs = 4k
+directory = /mnt/stripe_pool2
+time_based
+runtime = 30
+refill_buffers 
+iodepth = 32
+size = 10g
